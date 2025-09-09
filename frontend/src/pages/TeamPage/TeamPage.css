@@ -1,0 +1,83 @@
+.team-container {
+  width: 90%;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.team-image {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.team-name {
+  font-size: 1.15rem;
+  margin-top: 15px;
+}
+
+.team-bio {
+  padding: 5px;
+  font-size: 1rem;
+  text-overflow: ellipsis;
+}
+
+.team-flip-card {
+  background-color: transparent;
+  max-width: 325px;
+  height: 500px;
+  perspective: 1000px;
+}
+
+.team-flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s ease;
+  transform-style: preserve-3d;
+}
+
+.team-flip-card:hover .team-flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.team-flip-card-front,
+.team-flip-card-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  box-sizing: border-box; 
+  padding: 10px;
+}
+
+.team-flip-card-front img {
+  width: 100%;
+  height: 325px;
+  object-fit: cover;
+  border-radius: 6px;;
+}
+
+.team-flip-card-back {
+  transform: rotateY(180deg);
+}
+
+.slick-prev:before, .slick-next:before {
+  font-size: 3rem;
+  color: #003049;
+  z-index: 1;
+}
+
+.slick-track{
+  margin-left: 50px;
+}
