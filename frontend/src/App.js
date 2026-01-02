@@ -10,6 +10,7 @@ import { UserProvider } from './context/UserContext';
 import LoginPage from "./pages/LoginPage/LoginPage.js";
 import TeamPage from "./pages/TeamPage/TeamPage.js";
 import GettingHelp from "./pages/GettingHelp/GettingHelp.js";
+import DonatePage from "./pages/DonatePage/DonatePage.js";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path="/login" element={<LoginPage />} />
         <Route path="/team" element={<TeamPage />} />
         <Route path="/getting-help" element={<GettingHelp />} />
+        <Route path="/donate" element={<DonatePage />} />
       </Routes>
       <Footer />
       </div>
